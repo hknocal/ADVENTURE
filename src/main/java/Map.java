@@ -1,9 +1,14 @@
 public class Map {
 
     private Room currentRoom;
+    private Room starterRoom;
 
     public Room getCurrentRoom() {
         return currentRoom;
+    }
+
+    public Room getStarterRoom() {
+        return starterRoom;
     }
 
     public void setCurrentRoom(Room room){
@@ -24,7 +29,7 @@ public class Map {
         Room room8 = new Room("Room 8", "The room where you wonder when this takes and end");
         Room room9 = new Room("Room 9", "The room where you wonder whats next");
 
-        currentRoom = room1;
+        starterRoom = room1;
 
         room1.setEast(room2);
         room1.setSouth(room4);

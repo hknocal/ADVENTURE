@@ -4,6 +4,7 @@ public class UI {
 
     public void startUI() {
         Adventure adventure = new Adventure();
+        Player player = new Player ();
         Scanner sc = new Scanner(System.in);
 
         boolean stop = false;
@@ -62,7 +63,14 @@ public class UI {
                     }
                     break;
                 case "help":
-                    System.out.println(adventure.help());
+                    System.out.println("""
+                    Typing "Look" and pressing enter --> Your character looks around the current room the person is in, highlighting usable object.
+                    Typing "Exit" and pressing enter --> Closes the program. Your progress wont be saved!
+                    Typing North and pressing enter --> Checks to see if you can move north. Informing the player if its doable.
+                    Typing East and pressing enter --> Checks to see if you can move East. Informing the player if its doable.
+                    Typing West and pressing enter --> Checks to see if you can move West. Informing the player if its doable.
+                    Typing South and pressing enter --> Checks to see if you can move south. Informing the player if its doable.
+                            """);
                     break;
                 case "look":
                     System.out.println(adventure.look());
