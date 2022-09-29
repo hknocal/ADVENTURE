@@ -2,10 +2,11 @@ import java.util.Scanner;
 
 public class UI {
 
+    private Adventure adventure = new Adventure();
+    private Player player = new Player ();
+    private Scanner sc = new Scanner(System.in);
+
     public void startUI() {
-        Adventure adventure = new Adventure();
-        Player player = new Player ();
-        Scanner sc = new Scanner(System.in);
 
         boolean stop = false;
 
@@ -27,7 +28,7 @@ public class UI {
             String userInput = sc.nextLine().toLowerCase();
             switch (userInput) {
                 case "go north":
-                    boolean canGoNorth = adventure.goNorth();
+                    boolean canGoNorth = player.goNorth();
                     if (canGoNorth) {
                         System.out.println("Going north");
                     }
@@ -36,7 +37,7 @@ public class UI {
                     }
                     break;
                 case "go south":
-                    boolean canGoSouth = adventure.goSouth();
+                    boolean canGoSouth = player.goSouth();
                     if (canGoSouth) {
                         System.out.println("Going south");
                     }
@@ -45,7 +46,7 @@ public class UI {
                     }
                     break;
                 case "go east":
-                    boolean canGoEast = adventure.goEast();;
+                    boolean canGoEast = player.goEast();;
                     if (canGoEast) {
                         System.out.println("Going east");
                     }
@@ -54,7 +55,7 @@ public class UI {
                     }
                     break;
                 case "go west":
-                    boolean canGoWest = adventure.goWest();
+                    boolean canGoWest = player.goWest();
                     if (canGoWest) {
                         System.out.println("Going west");
                     }
@@ -73,7 +74,7 @@ public class UI {
                             """);
                     break;
                 case "look":
-                    System.out.println(adventure.look());
+                    System.out.println(player.look());
                     break;
                 case "exit":
                     System.out.println("Closing adventure."); //works

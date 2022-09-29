@@ -10,4 +10,53 @@ public class Player {
     public void setCurrentRoom (Room currentRoom) {
         this.currentRoom = currentRoom;
     }
+
+    public String look() {
+        return currentRoom.getRoomName() + " " + currentRoom.getRoomDescription();
+
+    }
+
+    public boolean goWest(){
+        Room roomWest = getCurrentRoom().getWest();
+        if (roomWest == null) {
+            return false;
+        }
+        else {
+            setCurrentRoom(roomWest);
+            return true;
+        }
+    }
+    public boolean goNorth() {
+        Room roomNorth = getCurrentRoom().getNorth();
+        if (roomNorth == null){
+            return false;
+        }
+        else {
+            setCurrentRoom(roomNorth);
+            return true;
+        }
+
+    }
+
+    public boolean goSouth(){
+        Room roomSouth = getCurrentRoom().getSouth();
+        if (roomSouth == null) {
+            return false;
+        }
+        else {
+            setCurrentRoom((roomSouth));
+            return true;
+        }
+
+    }
+
+    public boolean goEast() {
+        Room roomEast = getCurrentRoom().getEast();
+        if (roomEast == null) {
+            return false;
+        } else {
+            setCurrentRoom(roomEast);
+            return true;
+        }
+    }
 }
