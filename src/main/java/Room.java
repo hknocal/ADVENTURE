@@ -13,10 +13,10 @@ public class Room {
     private ArrayList<Item> items;
 
 
-    public Room(String roomName, String roomDescription) {
+    public Room(String roomName, String roomDescription)  {
         this.roomName = roomName;
         this.roomDescription = roomDescription;
-        items = new ArrayList<>();
+        items = new ArrayList<Item>();
     }
 
     public String getRoomDescription() {
@@ -74,6 +74,7 @@ public class Room {
     public void showItem(){
         System.out.println(items.toString());
     }
+
 
     @Override
     public String toString() {

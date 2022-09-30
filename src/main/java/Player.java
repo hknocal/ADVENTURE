@@ -1,5 +1,10 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class Player {
     Map map = new Map ();
+
+    private ArrayList<Item> playerInventory = new ArrayList<>();
 
     private Room currentRoom = map.getStarterRoom();
 
@@ -58,4 +63,19 @@ public class Player {
             return true;
         }
     }
+
+    public ArrayList<Item> getPlayerInventory() {
+        return playerInventory;
+    }
+
+    public void addItem (Item item) {
+        playerInventory.add(item);
+    }
+
+    public void takeItem(Room room){
+        room.getItems();
+        System.out.println(room.getItems());
+    }
+
+
 }
