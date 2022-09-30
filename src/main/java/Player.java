@@ -12,7 +12,7 @@ public class Player {
     }
 
     public String look() {
-        return currentRoom.getRoomName() + " " + currentRoom.getRoomDescription() + " " + currentRoom.getItems();
+        return currentRoom.toString();
     }
 
     public boolean goWest(){

@@ -10,5 +10,8 @@ public class Item {
         return name;
     }
 
-
+    @Override
+    public String toString() {
+        return name;
     }
+}

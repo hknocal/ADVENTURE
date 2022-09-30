@@ -16,7 +16,7 @@ public class Room {
     public Room(String roomName, String roomDescription) {
         this.roomName = roomName;
         this.roomDescription = roomDescription;
-        items = new ArrayList<Item>();
+        items = new ArrayList<>();
     }
 
     public String getRoomDescription() {
@@ -73,6 +73,14 @@ public class Room {
 
     public void showItem(){
         System.out.println(items.toString());
+    }
+
+    @Override
+    public String toString() {
+        return "You are currently in: " + "\n" +
+                "Room number: " + roomName + "\n" +
+                "Room description: " + roomDescription + "\n" +
+                "Current items in the room: " + items + "\n";
     }
 }
 

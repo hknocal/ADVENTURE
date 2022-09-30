@@ -52,5 +52,4 @@ public class Map {
         room1.addItemsToRoom(room1, "Shovel");
         room2.addItemsToRoom(room2,"Pickaxe");
     }
-//asdasdas
 }
