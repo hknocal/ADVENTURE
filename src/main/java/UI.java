@@ -67,8 +67,10 @@ public class UI {
                     System.out.println(player.getPlayerInventory());
                     break;
                 case "take item":
-                    System.out.println(player.getCurrentRoom().getItems());
                     System.out.println("Enter the number of the item you wanna remove");
+                    for (int i = 0; i < player.getCurrentRoom().getItems().size(); i++) {
+                        System.out.println(i + ":" + player.getCurrentRoom().getItems().get(i));
+                    }
                     int itemtakeNumber = sc.nextInt();
                     Item item = player.getCurrentRoom().getItems().get(itemtakeNumber);
                     player.getCurrentRoom().getItems().remove(itemtakeNumber);
@@ -77,12 +79,14 @@ public class UI {
                     System.out.println("You have taken the following objects " + player.getPlayerInventory());
                     break;
 
-                case "drop":
-                    System.out.println("Test1");
-                    break;
-                case "take":
-                    System.out.println("test2");
-                    break;
+                case "drop item":
+                    System.out.println("Enter the number of the item you wanna drop");
+                    for (int i = 0; i <player.getPlayerInventory().size(); i++){
+                        System.out.println(i + ":" + player.getPlayerInventory().get(i));
+                    }
+                    int itemDropNumber = sc.nextInt();
+                    player.getCurrentRoom().addItem(player.getPlayerInventory().get(itemDropNumber));
+                    player.getPlayerInventory().remove(itemDropNumber);
                 case "help":
                     System.out.println("""
                             -------------------------------------------

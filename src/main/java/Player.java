@@ -86,10 +86,7 @@ public class Player {
 
 
     public void takeItem(){
-        for (int i = 0; i < currentRoom.getItems().size(); i++) {
-            System.out.println(i + ":" + currentRoom.getItems().get(i));
-            currentRoom.getItems().remove(-1);
-        }
+
     }
 
 
