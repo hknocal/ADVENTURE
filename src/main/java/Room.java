@@ -16,6 +16,7 @@ public class Room {
     public Room(String roomName, String roomDescription) {
         this.roomName = roomName;
         this.roomDescription = roomDescription;
+        items = new ArrayList<Item>();
     }
 
     public String getRoomDescription() {
