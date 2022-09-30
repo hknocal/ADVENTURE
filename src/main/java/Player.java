@@ -72,9 +72,24 @@ public class Player {
         playerInventory.add(item);
     }
 
+    /*
     public void takeItem(Room room){
         room.getItems();
         System.out.println(room.getItems());
+    }
+*/
+    /*
+    addToDatabase(superheroName, superheroHeight, superheroPower, superheroWeakness, superheroHumanOrNot);
+        System.out.println("You have added: " + "" + superheroName + " " + "To the database");
+        System.out.println("");
+     */
+
+
+    public void takeItem(){
+        for (int i = 0; i < currentRoom.getItems().size(); i++) {
+            System.out.println(i + ":" + currentRoom.getItems().get(i));
+            currentRoom.getItems().remove(-1);
+        }
     }
 
 

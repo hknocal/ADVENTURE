@@ -9,8 +9,6 @@ public class UI {
     private Scanner sc = new Scanner(System.in);
 
     public void startUI() {
-        //Item i = new Item("test");
-        //player.addItem(i);
         boolean stop = false;
 
         System.out.println("""
@@ -69,7 +67,16 @@ public class UI {
                     System.out.println(player.getPlayerInventory());
                     break;
                 case "take item":
+                    System.out.println(player.getCurrentRoom().getItems());
+                    System.out.println("Enter the number of the item you wanna remove");
+                    int itemtakeNumber = sc.nextInt();
+                    Item item = player.getCurrentRoom().getItems().get(itemtakeNumber);
+                    player.getCurrentRoom().getItems().remove(itemtakeNumber);
+                    player.addItem(item);
+                    System.out.println("You have taken: " + item);
+                    System.out.println("You have taken the following objects " + player.getPlayerInventory());
                     break;
+
                 case "drop":
                     System.out.println("Test1");
                     break;
