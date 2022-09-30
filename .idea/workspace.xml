@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b6cd64-6d24-4cd7-a81f-92eed87b6480" name="Changes" comment="Player class now working">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Item.java" afterDir="false" />
+    <list default="true" id="44b6cd64-6d24-4cd7-a81f-92eed87b6480" name="Changes" comment="Added arraylist items and made look show items. But shows volaplyk, instead of litteral string of item">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Room.java" afterDir="false" />
     </list>
     <list id="8bdd8027-a2ea-49eb-871d-02792aae7659" name="Changes by Hakan Öcal" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Map.java" afterDir="false" />
@@ -28,20 +25,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/main/java/Room.java">
-      <ranges>
-        <range start1="0" end1="0" start2="0" end2="2" changelist="44b6cd64-6d24-4cd7-a81f-92eed87b6480" />
-        <range start1="9" end1="9" start2="11" end2="14" changelist="44b6cd64-6d24-4cd7-a81f-92eed87b6480" />
-        <range start1="13" end1="13" start2="18" end2="19" changelist="8bdd8027-a2ea-49eb-871d-02792aae7659" />
-        <range start1="21" end1="21" start2="27" end2="28" changelist="44b6cd64-6d24-4cd7-a81f-92eed87b6480" />
-        <range start1="54" end1="54" start2="61" end2="64" changelist="44b6cd64-6d24-4cd7-a81f-92eed87b6480" />
-        <range start1="55" end1="55" start2="65" end2="68" changelist="44b6cd64-6d24-4cd7-a81f-92eed87b6480" />
-        <range start1="56" end1="56" start2="69" end2="76" changelist="44b6cd64-6d24-4cd7-a81f-92eed87b6480" />
-        <range start1="57" end1="57" start2="77" end2="80" changelist="44b6cd64-6d24-4cd7-a81f-92eed87b6480" />
-      </ranges>
-    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -73,7 +56,7 @@
       <updated>1664455293250</updated>
       <workItem from="1664455294649" duration="242000" />
       <workItem from="1664455626586" duration="2298000" />
-      <workItem from="1664527012094" duration="3838000" />
+      <workItem from="1664527012094" duration="4552000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1664455338383</created>
@@ -96,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664459894854</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added arraylist items and made look show items. But shows volaplyk, instead of litteral string of item">
+      <created>1664531049264</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1664531049264</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,6 +107,7 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="classes, ui and methods setup and in working condition" />
     <MESSAGE value="Player class now working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Player class now working" />
+    <MESSAGE value="Added arraylist items and made look show items. But shows volaplyk, instead of litteral string of item" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added arraylist items and made look show items. But shows volaplyk, instead of litteral string of item" />
   </component>
 </project>

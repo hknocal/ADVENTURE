@@ -50,5 +50,5 @@ public class Map {
         room4.setNorth(room1);
         room4.setSouth(room7);
     }
-
+//asdasdas
 }
