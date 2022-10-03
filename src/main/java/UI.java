@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class UI {
@@ -48,6 +47,7 @@ public class UI {
                     } else {
                         System.out.println("You can't go that way");
                     }
+                    break;
                 case "go south":
                     boolean canGoSouth = player.goSouth();
                     if (canGoSouth) {
@@ -63,10 +63,9 @@ public class UI {
                     } else {
                         System.out.println("You can't got that way");
                     }
-
+                    break;
                 case "go east":
                     boolean canGoEast = player.goEast();
-                    ;
                     if (canGoEast) {
                         System.out.println("Going east");
                     } else {
@@ -75,12 +74,12 @@ public class UI {
                     break;
                 case "e":
                     boolean canGoEast2 = player.goEast();
-                    ;
                     if (canGoEast2) {
                         System.out.println("Going east");
                     } else {
                         System.out.println("You can't go that way");
                     }
+                    break;
                 case "go west":
                     boolean canGoWest = player.goWest();
                     if (canGoWest) {
@@ -96,8 +95,9 @@ public class UI {
                     } else {
                         System.out.println("You can't go that way");
                     }
+                    break;
                 case "inventory":
-                    System.out.println(player.getPlayerInventory());
+                    System.out.println(player.inventoryShow());
                     break;
                 case "take item":
                     System.out.println("Enter the number of the item you wanna remove");
@@ -113,6 +113,7 @@ public class UI {
                     break;
 
                 case "drop item":
+                    //TODO create fail safe for entering other than int
                     System.out.println("Enter the number of the item you wanna drop");
                     for (int i = 0; i <player.getPlayerInventory().size(); i++){
                         System.out.println(i + ":" + player.getPlayerInventory().get(i));
@@ -139,6 +140,8 @@ public class UI {
                     System.out.println("Closing adventure."); //works
                     stop = true;
                     break;
+                default:
+                    System.out.println("Invalid input, please try again");
 
 
             }

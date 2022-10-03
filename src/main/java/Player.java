@@ -1,8 +1,6 @@
 import java.util.ArrayList;
-import java.util.Scanner;
-
 public class Player {
-    Map map = new Map ();
+    Map map = new Map();
 
     private ArrayList<Item> playerInventory = new ArrayList<>();
 
@@ -12,7 +10,7 @@ public class Player {
         return currentRoom;
     }
 
-    public void setCurrentRoom (Room currentRoom) {
+    public void setCurrentRoom(Room currentRoom) {
         this.currentRoom = currentRoom;
     }
 
@@ -20,34 +18,32 @@ public class Player {
         return currentRoom.toString();
     }
 
-    public boolean goWest(){
+    public boolean goWest() {
         Room roomWest = getCurrentRoom().getWest();
         if (roomWest == null) {
             return false;
-        }
-        else {
+        } else {
             setCurrentRoom(roomWest);
             return true;
         }
     }
+
     public boolean goNorth() {
         Room roomNorth = getCurrentRoom().getNorth();
-        if (roomNorth == null){
+        if (roomNorth == null) {
             return false;
-        }
-        else {
+        } else {
             setCurrentRoom(roomNorth);
             return true;
         }
 
     }
 
-    public boolean goSouth(){
+    public boolean goSouth() {
         Room roomSouth = getCurrentRoom().getSouth();
         if (roomSouth == null) {
             return false;
-        }
-        else {
+        } else {
             setCurrentRoom((roomSouth));
             return true;
         }
@@ -68,24 +64,12 @@ public class Player {
         return playerInventory;
     }
 
-    public void addItem (Item item) {
+    public void addItem(Item item) {
         playerInventory.add(item);
     }
 
-    /*
-    public void takeItem(Room room){
-        room.getItems();
-        System.out.println(room.getItems());
+    public ArrayList<Item> inventoryShow() {
+        return playerInventory;
     }
-*/
-    /*
-    addToDatabase(superheroName, superheroHeight, superheroPower, superheroWeakness, superheroHumanOrNot);
-        System.out.println("You have added: " + "" + superheroName + " " + "To the database");
-        System.out.println("");
-     */
-
-
-
-
 
 }

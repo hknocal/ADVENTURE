@@ -54,6 +54,12 @@ public class Map {
         room1.addItemsToRoom(room1, "Shovel");
         room1.addItemsToRoom(room1, "cap");
         room2.addItemsToRoom(room2,"Pickaxe");
+        room3.addItemsToRoom(room3, "key");
+        room4.addItemsToRoom(room4, "Boots");
+        room6.addItemsToRoom(room6,"bucket");
+        room7.addItemsToRoom(room7,"Rope");
+        room8.addItemsToRoom(room8, "Lamp");
+        room9.addItemsToRoom(room9, "Golden Monkey Idol");
 
     }
 }
