@@ -21,7 +21,11 @@ public class UI {
                     Type go south if you wish to go south
                     Type go east if you wish to go east
                     Type go west if you wish to go west
-                                        
+                    
+                    Enter inventory if you wish to see current item inventory
+                    Enter take item if you wish to take an item in your inventory
+                    Enter drop item if you wish to drop an item in your inventory
+                    
                     Type help for list of options and useful information.
                     Type look 
                     -------------------------------------------
