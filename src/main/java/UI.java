@@ -5,7 +5,6 @@ public class UI {
 
     private Adventure adventure = new Adventure();
     private Player player = new Player();
-    //private Room room = new Room();
     private Scanner sc = new Scanner(System.in);
 
     public void startUI() {
@@ -38,6 +37,13 @@ public class UI {
                         System.out.println("You can't go that way");
                     }
                     break;
+                case "n":
+                    boolean canGoNorth2 = player.goNorth();
+                    if (canGoNorth2) {
+                        System.out.println("Going north");
+                    } else {
+                        System.out.println("You can't go that way");
+                    }
                 case "go south":
                     boolean canGoSouth = player.goSouth();
                     if (canGoSouth) {
@@ -46,6 +52,14 @@ public class UI {
                         System.out.println("You can't got that way");
                     }
                     break;
+                case "s":
+                    boolean canGoSouth2 = player.goSouth();
+                    if (canGoSouth2) {
+                        System.out.println("Going south");
+                    } else {
+                        System.out.println("You can't got that way");
+                    }
+
                 case "go east":
                     boolean canGoEast = player.goEast();
                     ;
@@ -55,6 +69,14 @@ public class UI {
                         System.out.println("You can't go that way");
                     }
                     break;
+                case "e":
+                    boolean canGoEast2 = player.goEast();
+                    ;
+                    if (canGoEast2) {
+                        System.out.println("Going east");
+                    } else {
+                        System.out.println("You can't go that way");
+                    }
                 case "go west":
                     boolean canGoWest = player.goWest();
                     if (canGoWest) {
@@ -63,6 +85,13 @@ public class UI {
                         System.out.println("You can't go that way");
                     }
                     break;
+                case "w":
+                    boolean canGoWest2 = player.goWest();
+                    if (canGoWest2) {
+                        System.out.println("Going west");
+                    } else {
+                        System.out.println("You can't go that way");
+                    }
                 case "inventory":
                     System.out.println(player.getPlayerInventory());
                     break;

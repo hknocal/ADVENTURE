@@ -85,9 +85,7 @@ public class Player {
      */
 
 
-    public void takeItem(){
 
-    }
 
 
 }
