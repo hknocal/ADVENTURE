@@ -6,7 +6,7 @@ public class Player {
 
     private Room currentRoom = map.getStarterRoom();
 
-    private int playerHealth = 100;
+    private int playerHealthPoints;
     public Room getCurrentRoom() {
         return currentRoom;
     }
@@ -74,7 +74,8 @@ public class Player {
     }
 
     public void playerHealth () {
-        System.out.println(playerHealth);
+        playerHealthPoints = 100;
+        System.out.println("Current health status: " + playerHealthPoints);
     }
 
 }

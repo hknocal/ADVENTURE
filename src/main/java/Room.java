@@ -12,6 +12,7 @@ public class Room {
 
     private ArrayList<Item> items;
 
+    Item item = new Item ();
 
     public Room(String roomName, String roomDescription)  {
         this.roomName = roomName;
@@ -66,7 +67,9 @@ public class Room {
     public void addItemsToRoom(Room room, String itemName) {
         room.addItem(new Item(itemName));
     }
-
+    public void addFoodToRoom(Room room, String itemName) {
+        room.addItem(new Item());
+    }
 
     public ArrayList<Item> getItems() {
         return items;
