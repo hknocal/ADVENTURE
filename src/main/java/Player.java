@@ -6,6 +6,7 @@ public class Player {
 
     private Room currentRoom = map.getStarterRoom();
 
+    private int playerHealth = 100;
     public Room getCurrentRoom() {
         return currentRoom;
     }
@@ -70,6 +71,10 @@ public class Player {
 
     public ArrayList<Item> inventoryShow() {
         return playerInventory;
+    }
+
+    public void playerHealth () {
+        System.out.println(playerHealth);
     }
 
 }

@@ -24,6 +24,7 @@ public class UI {
                     Enter inventory if you wish to see current item inventory
                     Enter take item if you wish to take an item in your inventory
                     Enter drop item if you wish to drop an item in your inventory
+                    Enter health if you wish to see current player health
                     
                     Type help for list of options and useful information.
                     Type look 
@@ -121,6 +122,10 @@ public class UI {
                     int itemDropNumber = sc.nextInt();
                     player.getCurrentRoom().addItem(player.getPlayerInventory().get(itemDropNumber));
                     player.getPlayerInventory().remove(itemDropNumber);
+                case "health":
+                    player.playerHealth();
+                    break;
+
                 case "help":
                     System.out.println("""
                             -------------------------------------------
