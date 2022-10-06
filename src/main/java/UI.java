@@ -20,12 +20,12 @@ public class UI {
                     Type go south if you wish to go south
                     Type go east if you wish to go east
                     Type go west if you wish to go west
-                    
+                                        
                     Enter inventory if you wish to see current item inventory
                     Enter take item if you wish to take an item in your inventory
                     Enter drop item if you wish to drop an item in your inventory
                     Enter health if you wish to see current player health
-                    
+                                        
                     Type help for list of options and useful information.
                     Type look 
                     -------------------------------------------
@@ -116,7 +116,7 @@ public class UI {
                 case "drop item":
                     //TODO create fail safe for entering other than int
                     System.out.println("Enter the number of the item you wanna drop");
-                    for (int i = 0; i <player.getPlayerInventory().size(); i++){
+                    for (int i = 0; i < player.getPlayerInventory().size(); i++) {
                         System.out.println(i + ":" + player.getPlayerInventory().get(i));
                     }
                     int itemDropNumber = sc.nextInt();
@@ -126,7 +126,8 @@ public class UI {
                     player.playerHealth();
                     break;
                 case "eat":
-                    // eat metode her
+                    String foodName = sc.nextLine();
+                    player.eat(foodName);
                     break;
                 case "help":
                     System.out.println("""
