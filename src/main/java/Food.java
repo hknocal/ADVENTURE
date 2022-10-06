@@ -7,9 +7,10 @@ public class Food extends Item {
     }
 
     public String toString () {
-        return super.toString() + " " + healthValue;
+        return super.toString() + "(HP: " + healthValue + ")";
     }
     public int getHealthValue() {
         return healthValue;
     }
+
 }

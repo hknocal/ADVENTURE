@@ -51,15 +51,16 @@ public class Map {
         room4.setNorth(room1);
         room4.setSouth(room7);
 
-        room1.addItemsToRoom(room1, "Shovel");
+        room1.addItemsToRoom(room1, "shovel");
         room1.addItemsToRoom(room1, "cap");
-        room2.addItemsToRoom(room2,"Pickaxe");
+        room2.addItemsToRoom(room2, "pickaxe");
         room3.addItemsToRoom(room3, "key");
         room4.addItemsToRoom(room4, "Boots");
-        room6.addItemsToRoom(room6,"bucket");
-        room7.addItemsToRoom(room7,"Rope");
-        room8.addItemsToRoom(room8, "Lamp");
-        room9.addItemsToRoom(room9, "Golden Monkey Idol");
-        room1.addFoodToRoom(room1, "Banana", 50);
+        room6.addItemsToRoom(room6, "bucket");
+        room7.addItemsToRoom(room7, "rope");
+        room8.addItemsToRoom(room8, "lamp");
+        room9.addItemsToRoom(room9, "golden monkey idol");
+        room1.addFoodToRoom(room1, "banana", 50);
+        room1.addFoodToRoom(room1,"cactus", -50);
     }
 }

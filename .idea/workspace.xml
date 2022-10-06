@@ -4,11 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b6cd64-6d24-4cd7-a81f-92eed87b6480" name="Changes" comment="eat method now working" />
-    <list id="69819721-c2e5-41ee-acc3-2e45bd24a5c5" name="Changes by andre" comment="">
+    <list default="true" id="44b6cd64-6d24-4cd7-a81f-92eed87b6480" name="Changes" comment="eat method now working">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Food.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Food.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Map.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI.java" afterDir="false" />
     </list>
+    <list id="69819721-c2e5-41ee-acc3-2e45bd24a5c5" name="Changes by andre" comment="Changes by andre" />
     <list id="8bdd8027-a2ea-49eb-871d-02792aae7659" name="Changes by Hakan Öcal" comment="" />
+    <list id="1acb59a8-b671-4f9e-8ca0-05b334b1fbdf" name="Changes by Hjordt" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Adventure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Adventure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Map.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,6 +34,27 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/main/java/Map.java">
+      <ranges>
+        <range start1="0" end1="1" start2="0" end2="1" changelist="1acb59a8-b671-4f9e-8ca0-05b334b1fbdf" />
+        <range start1="53" end1="54" start2="53" end2="54" changelist="44b6cd64-6d24-4cd7-a81f-92eed87b6480" />
+        <range start1="55" end1="56" start2="55" end2="56" changelist="44b6cd64-6d24-4cd7-a81f-92eed87b6480" />
+        <range start1="58" end1="63" start2="58" end2="64" changelist="44b6cd64-6d24-4cd7-a81f-92eed87b6480" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/java/UI.java">
+      <ranges>
+        <range start1="1" end1="1" start2="1" end2="9" changelist="1acb59a8-b671-4f9e-8ca0-05b334b1fbdf" />
+        <range start1="9" end1="9" start2="17" end2="18" changelist="1acb59a8-b671-4f9e-8ca0-05b334b1fbdf" />
+        <range start1="13" end1="13" start2="22" end2="41" changelist="1acb59a8-b671-4f9e-8ca0-05b334b1fbdf" />
+        <range start1="16" end1="33" start2="44" end2="44" changelist="44b6cd64-6d24-4cd7-a81f-92eed87b6480" />
+        <range start1="34" end1="113" start2="45" end2="141" changelist="44b6cd64-6d24-4cd7-a81f-92eed87b6480" />
+        <range start1="114" end1="154" start2="142" end2="192" changelist="44b6cd64-6d24-4cd7-a81f-92eed87b6480" />
+        <range start1="155" end1="156" start2="193" end2="193" changelist="1acb59a8-b671-4f9e-8ca0-05b334b1fbdf" />
+      </ranges>
+    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -70,7 +102,7 @@
       <workItem from="1664731343285" duration="1641000" />
       <workItem from="1664884936320" duration="3868000" />
       <workItem from="1664961068047" duration="1562000" />
-      <workItem from="1665044210356" duration="2234000" />
+      <workItem from="1665044210356" duration="5384000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1664455338383</created>
@@ -121,7 +153,21 @@
       <option name="project" value="LOCAL" />
       <updated>1665046433058</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Changes by andre">
+      <created>1665049030056</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1665049030056</updated>
+    </task>
+    <task id="LOCAL-00009" summary="eat method now working">
+      <created>1665049037998</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1665049037998</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,6 +191,7 @@
     <MESSAGE value="added health method to player class" />
     <MESSAGE value="created food class" />
     <MESSAGE value="working on food class and health method" />
+    <MESSAGE value="Changes by andre" />
     <MESSAGE value="eat method now working" />
     <option name="LAST_COMMIT_MESSAGE" value="eat method now working" />
   </component>
