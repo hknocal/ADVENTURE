@@ -6,7 +6,7 @@ public class Player {
 
     private Room currentRoom = map.getStarterRoom();
 
-    private int playerHealthPoints;
+    private int playerHealthPoints = 100;
     public Room getCurrentRoom() {
         return currentRoom;
     }
@@ -74,11 +74,20 @@ public class Player {
     }
 
     public void playerHealth () {
-        playerHealthPoints = 100;
         System.out.println("Current health status: " + playerHealthPoints);
     }
 
     public void eat(String foodName) {
+        for (Item item : playerInventory) {
+            if (item instanceof Food) {
+                if (foodName.equals(item.getName())) {
+                    Food selectedFood = (Food) item;
+                    playerHealthPoints += selectedFood.getHealthValue();
+                    playerInventory.remove(item);
+                    break;
+                }
+            }
+        }
     }
 }
 

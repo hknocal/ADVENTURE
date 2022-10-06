@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b6cd64-6d24-4cd7-a81f-92eed87b6480" name="Changes" comment="created food class">
+    <list default="true" id="44b6cd64-6d24-4cd7-a81f-92eed87b6480" name="Changes" comment="working on food class and health method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Adventure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Adventure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Food.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Food.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Map.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Room.java" afterDir="false" />
+    </list>
+    <list id="69819721-c2e5-41ee-acc3-2e45bd24a5c5" name="Changes by andre" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI.java" afterDir="false" />
     </list>
     <list id="8bdd8027-a2ea-49eb-871d-02792aae7659" name="Changes by Hakan Öcal" comment="" />
@@ -38,18 +37,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Program Files (x86)/intelliJ/IdeaProjects/School/SuperheroProject&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "last_opened_file_path": "C:/Program Files (x86)/intelliJ/IdeaProjects/School/SuperheroProject",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.uml"
   }
-}</component>
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="ADVENTURE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -65,6 +74,7 @@
       <workItem from="1664731343285" duration="1641000" />
       <workItem from="1664884936320" duration="3868000" />
       <workItem from="1664961068047" duration="1562000" />
+      <workItem from="1665044210356" duration="2054000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1664455338383</created>
@@ -101,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664886800798</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="working on food class and health method">
+      <created>1665044251467</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1665044251467</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +141,7 @@
     <MESSAGE value="Player class now working" />
     <MESSAGE value="added health method to player class" />
     <MESSAGE value="created food class" />
-    <option name="LAST_COMMIT_MESSAGE" value="created food class" />
+    <MESSAGE value="working on food class and health method" />
+    <option name="LAST_COMMIT_MESSAGE" value="working on food class and health method" />
   </component>
 </project>
