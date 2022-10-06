@@ -1,4 +1,7 @@
+//TODO move take item & drop item to player class
+
 import java.util.ArrayList;
+
 public class Player {
     Map map = new Map();
 
@@ -7,6 +10,7 @@ public class Player {
     private Room currentRoom = map.getStarterRoom();
 
     private int playerHealthPoints = 100;
+
     public Room getCurrentRoom() {
         return currentRoom;
     }
@@ -73,7 +77,7 @@ public class Player {
         return playerInventory;
     }
 
-    public void playerHealth () {
+    public void playerHealth() {
         System.out.println("Current health status: " + playerHealthPoints);
     }
 
@@ -81,16 +85,14 @@ public class Player {
         for (Item item : playerInventory) {
             if (item instanceof Food) {
                 if (foodName.equals(item.getName())) {
+                    System.out.println(playerInventory);
                     Food selectedFood = (Food) item;
                     playerHealthPoints += selectedFood.getHealthValue();
                     playerInventory.remove(item);
                     break;
                 }
+
             }
         }
     }
 }
-
-// TODO find item i room klasse, for each loop af alle items
-// TODO kald find item i CurrentRoom, instanceof food (så vi kan validere om food item'et kan spises)
-// TODO food.getHealth metode til at regulere playerHealth

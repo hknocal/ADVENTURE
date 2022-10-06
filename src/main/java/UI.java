@@ -1,4 +1,12 @@
 import java.util.Scanner;
+import java.util.InputMismatchException;
+
+//TODO add try/cath - semi. Still need to make fail safe withing different switch cases
+//TODO check for fail states
+//TODO pretiffy UI - remove redundent code.
+//TODO IF TIME - add color to output
+//TODO Make sure it doesent repeat unnecessary code
+//TODO refactor take item & drop item so it gets called from adventure. (Look at eat() for inspiration.)
 
 public class UI {
 
@@ -7,10 +15,30 @@ public class UI {
     private Scanner sc = new Scanner(System.in);
 
     public void startUI() {
+
         boolean stop = false;
 
         System.out.println("""
                 Welcome to our text adventure
+                                
+                ------------------------------------------
+                To navigate within the rooms use the following commands:
+                    
+                Enter go north if you wish to go north
+                Enter go south if you wish to go south
+                Enter go east if you wish to go east
+                Enter go west if you wish to go west
+                    
+                -------------------------------------------
+                Acces commands:
+                    
+                Enter inventory if you wish to see current item inventory
+                Enter look to see current room and items in the room
+                Enter take item if you wish to take an item in your inventory
+                Enter drop item if you wish to drop an item in your inventory
+                Enter health if you wish to see current player health                        
+                Enter help for list of options and useful information
+                -------------------------------------------
                 """);
 
         while (stop == false) {
@@ -163,7 +191,6 @@ public class UI {
             } catch (InputMismatchException e) {
                 System.out.println("please enter a valid number from the list.");
             }
-
         }
     }
 }

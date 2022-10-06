@@ -1,3 +1,5 @@
+//TODO Edit toString so it looks better.
+
 import java.util.ArrayList;
 
 public class Room {
