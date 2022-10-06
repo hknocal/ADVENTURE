@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b6cd64-6d24-4cd7-a81f-92eed87b6480" name="Changes" comment="working on food class and health method">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Adventure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Adventure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
-    </list>
+    <list default="true" id="44b6cd64-6d24-4cd7-a81f-92eed87b6480" name="Changes" comment="eat method now working" />
     <list id="69819721-c2e5-41ee-acc3-2e45bd24a5c5" name="Changes by andre" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI.java" afterDir="false" />
     </list>
@@ -74,7 +70,7 @@
       <workItem from="1664731343285" duration="1641000" />
       <workItem from="1664884936320" duration="3868000" />
       <workItem from="1664961068047" duration="1562000" />
-      <workItem from="1665044210356" duration="2054000" />
+      <workItem from="1665044210356" duration="2234000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1664455338383</created>
@@ -118,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665044251467</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="eat method now working">
+      <created>1665046433058</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1665046433058</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +145,7 @@
     <MESSAGE value="added health method to player class" />
     <MESSAGE value="created food class" />
     <MESSAGE value="working on food class and health method" />
-    <option name="LAST_COMMIT_MESSAGE" value="working on food class and health method" />
+    <MESSAGE value="eat method now working" />
+    <option name="LAST_COMMIT_MESSAGE" value="eat method now working" />
   </component>
 </project>
