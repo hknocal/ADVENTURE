@@ -9,5 +9,7 @@ public class Food extends Item {
     public String toString () {
         return super.toString() + " " + healthValue;
     }
-
+    public int getHealthValue() {
+        return healthValue;
+    }
 }

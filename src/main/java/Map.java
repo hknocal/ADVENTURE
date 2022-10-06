@@ -60,6 +60,6 @@ public class Map {
         room7.addItemsToRoom(room7,"Rope");
         room8.addItemsToRoom(room8, "Lamp");
         room9.addItemsToRoom(room9, "Golden Monkey Idol");
-        room1.addFoodToRoom(room1, "Banana");
+        room1.addFoodToRoom(room1, "Banana", 50);
     }
 }

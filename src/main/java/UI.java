@@ -125,7 +125,9 @@ public class UI {
                 case "health":
                     player.playerHealth();
                     break;
-
+                case "eat":
+                    // eat metode her
+                    break;
                 case "help":
                     System.out.println("""
                             -------------------------------------------

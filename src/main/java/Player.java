@@ -78,4 +78,10 @@ public class Player {
         System.out.println("Current health status: " + playerHealthPoints);
     }
 
+    public void eat(String foodName) {
+    }
 }
+
+// TODO find item i room klasse, for each loop af alle items
+// TODO kald find item i CurrentRoom, instanceof food (så vi kan validere om food item'et kan spises)
+// TODO food.getHealth metode til at regulere playerHealth
