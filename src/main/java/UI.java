@@ -10,8 +10,9 @@ import java.util.InputMismatchException;
 
 public class UI {
 
-    private Adventure adventure = new Adventure();
     private Player player = new Player();
+
+    private Adventure adventure = new Adventure(player);
     private Scanner sc = new Scanner(System.in);
 
     public void startUI() {
@@ -44,81 +45,24 @@ public class UI {
         while (stop == false) {
             String userInput = sc.nextLine().toLowerCase();
 
+            String[] userInputs = userInput.split(" ");
+            String command = userInputs[0];
+            String userChoice = "";
+            if (userInputs.length > 1){
+                userChoice = userInputs[1];
+            }
+
 
             try {
 
-                switch (userInput) {
-                    case "go north":
-                        boolean canGoNorth = player.goNorth();
-                        if (canGoNorth) {
-                            System.out.println("Going north");
+                switch (command) {
+                    case "go":
+                        boolean succes = adventure.go(userChoice); //wirte direction to go
+                        if (succes){
+                            System.out.println("You have gone: " + userChoice);
                         } else {
-                            System.out.println("You can't go that way");
+                            System.out.println("You cannot go that way");
                         }
-                        System.out.println("Enter command: ");
-                        break;
-                    case "n":
-                        boolean canGoNorth2 = player.goNorth();
-                        if (canGoNorth2) {
-                            System.out.println("Going north");
-                        } else {
-                            System.out.println("You can't go that way");
-                        }
-                        System.out.println("Enter command: ");
-                        break;
-                    case "go south":
-                        boolean canGoSouth = player.goSouth();
-                        if (canGoSouth) {
-                            System.out.println("Going south");
-                        } else {
-                            System.out.println("You can't got that way");
-                        }
-                        System.out.println("Enter command: ");
-                        break;
-                    case "s":
-                        boolean canGoSouth2 = player.goSouth();
-                        if (canGoSouth2) {
-                            System.out.println("Going south");
-                        } else {
-                            System.out.println("You can't got that way");
-                        }
-                        System.out.println("Enter command: ");
-                        break;
-                    case "go east":
-                        boolean canGoEast = player.goEast();
-                        if (canGoEast) {
-                            System.out.println("Going east");
-                        } else {
-                            System.out.println("You can't go that way");
-                        }
-                        System.out.println("Enter command: ");
-                        break;
-                    case "e":
-                        boolean canGoEast2 = player.goEast();
-                        if (canGoEast2) {
-                            System.out.println("Going east");
-                        } else {
-                            System.out.println("You can't go that way");
-                        }
-                        System.out.println("Enter command: ");
-                        break;
-                    case "go west":
-                        boolean canGoWest = player.goWest();
-                        if (canGoWest) {
-                            System.out.println("Going west");
-                        } else {
-                            System.out.println("You can't go that way");
-                        }
-                        System.out.println("Enter command: ");
-                        break;
-                    case "w":
-                        boolean canGoWest2 = player.goWest();
-                        if (canGoWest2) {
-                            System.out.println("Going west");
-                        } else {
-                            System.out.println("You can't go that way");
-                        }
-                        System.out.println("Enter command: ");
                         break;
                     case "inventory":
                         System.out.println(player.inventoryShow());
