@@ -11,6 +11,8 @@ public class Player {
 
     private int playerHealthPoints = 100;
 
+    private Weapon weaponEquipped;
+
     public Room getCurrentRoom() {
         return currentRoom;
     }
@@ -95,4 +97,19 @@ public class Player {
             }
         }
     }
+    public boolean weaponEquip(String weaponName){
+        for (Item item : playerInventory) {
+            if (item instanceof Weapon){
+                if (item.getName().equals(weaponName)){
+                    getPlayerInventory();
+                    Weapon selectedWeapon = (Weapon) item;
+                    weaponEquipped = selectedWeapon;
+                    playerInventory.remove(selectedWeapon);
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }
