@@ -73,6 +73,15 @@ public class Room {
         room.addItem(new Food(itemName, healthValue));
     }
 
+    public void addMeleeWeapon(Room room, String itemName, int weaponDamage) {
+        room.addItem(new MeleeWeapon(itemName, weaponDamage));
+    }
+
+    public void addRangedWeapon(Room room, String itemName, int weaponDamage, int weaponUses) {
+        room.addItem(new RangedWeapon(itemName, weaponDamage, weaponUses) {
+        });
+    }
+
     public ArrayList<Item> getItems() {
         return items;
     }

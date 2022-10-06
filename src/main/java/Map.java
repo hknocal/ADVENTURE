@@ -62,5 +62,7 @@ public class Map {
         room9.addItemsToRoom(room9, "golden monkey idol");
         room1.addFoodToRoom(room1, "banana", 50);
         room1.addFoodToRoom(room1,"cactus", -50);
+        room1.addMeleeWeapon(room1, "Sword", 150);
+        room1.addRangedWeapon(room1, "Crossbow", 300, 5);
     }
 }
