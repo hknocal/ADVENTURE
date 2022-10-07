@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b6cd64-6d24-4cd7-a81f-92eed87b6480" name="Changes" comment="Activaed adventure controlling">
+    <list default="true" id="44b6cd64-6d24-4cd7-a81f-92eed87b6480" name="Changes" comment="Made try/catch catch every exception. Inplemented equip function">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Adventure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Adventure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI.java" afterDir="false" />
     </list>
     <list id="8bdd8027-a2ea-49eb-871d-02792aae7659" name="Changes by Hakan Öcal" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,18 +32,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Program Files (x86)/intelliJ/IdeaProjects/School/SuperheroProject&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Program Files (x86)/intelliJ/IdeaProjects/School/SuperheroProject",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -70,7 +68,7 @@
       <workItem from="1664731343285" duration="1641000" />
       <workItem from="1664884936320" duration="3868000" />
       <workItem from="1664961068047" duration="1562000" />
-      <workItem from="1665128486306" duration="5196000" />
+      <workItem from="1665128486306" duration="6503000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1664455338383</created>
@@ -121,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665064390398</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Made try/catch catch every exception. Inplemented equip function">
+      <created>1665134026450</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1665134026450</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +151,7 @@
     <MESSAGE value="created food class" />
     <MESSAGE value="Made weapon equip" />
     <MESSAGE value="Activaed adventure controlling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Activaed adventure controlling" />
+    <MESSAGE value="Made try/catch catch every exception. Inplemented equip function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made try/catch catch every exception. Inplemented equip function" />
   </component>
 </project>

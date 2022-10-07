@@ -82,6 +82,7 @@ public class UI {
                             System.out.println(i + ":" + player.getCurrentRoom().getItems().get(i));
                         }
                         int itemtakeNumber = sc.nextInt();
+                        sc.nextLine();
                     {
                         if (itemtakeNumber <= player.getCurrentRoom().getItems().size()) {
                             System.out.println("");
@@ -103,6 +104,7 @@ public class UI {
                     int itemDropNumber = sc.nextInt();
                     player.getCurrentRoom().addItem(player.getPlayerInventory().get(itemDropNumber));
                     player.getPlayerInventory().remove(itemDropNumber);
+                    break;
                 case "health":
                     player.playerHealth();
                     System.out.println("Enter command: ");
@@ -140,7 +142,6 @@ public class UI {
                     break;
                 default:
                     System.out.println("Invalid input, please try again");
-                    break;
             }
         } catch(Exception e){
             System.out.println("please enter a valid number from the list.");
