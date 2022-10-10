@@ -38,7 +38,9 @@ public class UI {
                 Enter look to see current room and items in the room
                 Enter take item if you wish to take an item in your inventory
                 Enter drop item if you wish to drop an item in your inventory
-                Enter health if you wish to see current player health                        
+                Enter health if you wish to see current player health
+                Enter equip if you wish to equip a weapon from your inventory
+                Enter attack to attack an enemy                        
                 Enter help for list of options and useful information
                 -------------------------------------------
                 """);
