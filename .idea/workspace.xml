@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b6cd64-6d24-4cd7-a81f-92eed87b6480" name="Changes" comment="Made weapon equip">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Adventure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Adventure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI.java" afterDir="false" />
+    <list default="true" id="44b6cd64-6d24-4cd7-a81f-92eed87b6480" name="Changes" comment="minor ui changes">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Map.java" afterDir="false" />
     </list>
     <list id="8bdd8027-a2ea-49eb-871d-02792aae7659" name="Changes by Hakan Öcal" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -105,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665062808788</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="minor ui changes">
+      <created>1665393233900</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1665393233900</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +133,7 @@
     <MESSAGE value="added health method to player class" />
     <MESSAGE value="created food class" />
     <MESSAGE value="Made weapon equip" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made weapon equip" />
+    <MESSAGE value="minor ui changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor ui changes" />
   </component>
 </project>

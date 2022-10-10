@@ -61,8 +61,18 @@ public class Map {
         room8.addItemsToRoom(room8, "lamp");
         room9.addItemsToRoom(room9, "golden monkey idol");
         room1.addFoodToRoom(room1, "banana", 50);
-        room1.addFoodToRoom(room1,"cactus", -50);
+        room1.addFoodToRoom(room1, "cactus", -50);
+        room2.addFoodToRoom(room2,"bread", 25);
+        room3.addFoodToRoom(room3,"apple", 30);
+        room4.addFoodToRoom(room4,"carrot", 100);
+        room5.addFoodToRoom(room5,"sandwich", 200);
+        room6.addFoodToRoom(room6,"chocolate", 100);
+        room6.addFoodToRoom(room6,"chili", -50);
         room1.addMeleeWeapon(room1, "sword", 150);
         room1.addRangedWeapon(room1, "crossbow", 300, 5);
+        room2.addRangedWeapon(room2, "gun", 500, 10);
+        room2.addMeleeWeapon(room2, "scimitar", 150);
+        room2.addMeleeWeapon(room3, "polearm", 200);
+        room3.addRangedWeapon(room3, "longbow",400, 8);
     }
 }
