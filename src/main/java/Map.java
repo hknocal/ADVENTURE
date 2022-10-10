@@ -55,14 +55,14 @@ public class Map {
         room1.addItemsToRoom(room1, "cap");
         room2.addItemsToRoom(room2, "pickaxe");
         room3.addItemsToRoom(room3, "key");
-        room4.addItemsToRoom(room4, "Boots");
+        room4.addItemsToRoom(room4, "boots");
         room6.addItemsToRoom(room6, "bucket");
         room7.addItemsToRoom(room7, "rope");
         room8.addItemsToRoom(room8, "lamp");
         room9.addItemsToRoom(room9, "golden monkey idol");
         room1.addFoodToRoom(room1, "banana", 50);
         room1.addFoodToRoom(room1,"cactus", -50);
-        room1.addMeleeWeapon(room1, "Sword", 150);
-        room1.addRangedWeapon(room1, "Crossbow", 300, 5);
+        room1.addMeleeWeapon(room1, "sword", 150);
+        room1.addRangedWeapon(room1, "crossbow", 300, 5);
     }
 }

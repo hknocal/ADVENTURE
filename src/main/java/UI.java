@@ -68,9 +68,9 @@ public class UI {
                     case "equip":
                         System.out.println("Enter the name of the weapon you wanna equip: ");
                         System.out.println(player.inventoryShow());
-                        String weaponEquip = sc.nextLine();
+                        String weaponEquip = sc.nextLine().toLowerCase();
                         player.weaponEquip(weaponEquip);
-                        System.out.println("You have not equiped: " + weaponEquip);
+                        System.out.println("You have now equiped: " + weaponEquip);
                         break;
                     case "inventory":
                         System.out.println(player.inventoryShow());
@@ -93,55 +93,55 @@ public class UI {
                             System.out.println("You have taken: " + item);
                         }
                     }
-                System.out.println("Enter command: ");
-                break;
-                case "drop":
-                    //TODO create fail safe for entering other than int
-                    System.out.println("Enter the number of the item you wanna drop");
-                    for (int i = 0; i < player.getPlayerInventory().size(); i++) {
-                        System.out.println(i + ":" + player.getPlayerInventory().get(i));
-                    }
-                    int itemDropNumber = sc.nextInt();
-                    player.getCurrentRoom().addItem(player.getPlayerInventory().get(itemDropNumber));
-                    player.getPlayerInventory().remove(itemDropNumber);
-                    break;
-                case "health":
-                    player.playerHealth();
                     System.out.println("Enter command: ");
                     break;
-                case "eat":
-                    if (player.getPlayerInventory() != null) {
-                        System.out.println("Please enter the name of the food you wish to eat");
-                        String foodName = sc.nextLine().toLowerCase();
-                        player.eat(foodName);
-                    } else {
-                        System.out.println("You currently dont have any items in your bag");
-                    }
-                    System.out.println("Enter command: ");
-                    break;
-                case "help":
-                    System.out.println("""
-                            -------------------------------------------
-                            Typing "Look" and pressing enter --> Your character looks around the current room the person is in, highlighting usable object.
-                            Typing "Exit" and pressing enter --> Closes the program. Your progress wont be saved!
-                            Typing North and pressing enter --> Checks to see if you can move north. Informing the player if its doable.
-                            Typing East and pressing enter --> Checks to see if you can move East. Informing the player if its doable.
-                            Typing West and pressing enter --> Checks to see if you can move West. Informing the player if its doable.
-                            Typing South and pressing enter --> Checks to see if you can move south. Informing the player if its doable.
-                            -------------------------------------------
-                                    """);
-                    System.out.println("Enter command: ");
-                    break;
-                case "look":
-                    System.out.println(player.look());
-                    System.out.println("Enter command: ");
-                    break;
-                case "exit":
-                    System.out.println("Closing adventure.");
-                    stop = true;
-                    break;
-                default:
-                    System.out.println("Invalid input, please try again");
+                    case "drop":
+                        //TODO create fail safe for entering other than int
+                        System.out.println("Enter the number of the item you wanna drop");
+                        for (int i = 0; i < player.getPlayerInventory().size(); i++) {
+                            System.out.println(i + ":" + player.getPlayerInventory().get(i));
+                        }
+                        int itemDropNumber = sc.nextInt();
+                        player.getCurrentRoom().addItem(player.getPlayerInventory().get(itemDropNumber));
+                        player.getPlayerInventory().remove(itemDropNumber);
+                        break;
+                    case "health":
+                        player.playerHealth();
+                        System.out.println("Enter command: ");
+                        break;
+                    case "eat":
+                        if (player.getPlayerInventory() != null) {
+                            System.out.println("Please enter the name of the food you wish to eat");
+                            String foodName = sc.nextLine().toLowerCase();
+                            player.eat(foodName);
+                        } else {
+                            System.out.println("You currently dont have any items in your bag");
+                        }
+                        System.out.println("Enter command: ");
+                        break;
+                    case "help":
+                        System.out.println("""
+                                -------------------------------------------
+                                Typing "Look" and pressing enter --> Your character looks around the current room the person is in, highlighting usable object.
+                                Typing "Exit" and pressing enter --> Closes the program. Your progress wont be saved!
+                                Typing North and pressing enter --> Checks to see if you can move north. Informing the player if its doable.
+                                Typing East and pressing enter --> Checks to see if you can move East. Informing the player if its doable.
+                                Typing West and pressing enter --> Checks to see if you can move West. Informing the player if its doable.
+                                Typing South and pressing enter --> Checks to see if you can move south. Informing the player if its doable.
+                                -------------------------------------------
+                                        """);
+                        System.out.println("Enter command: ");
+                        break;
+                    case "look":
+                        System.out.println(player.look());
+                        System.out.println("Enter command: ");
+                        break;
+                    case "exit":
+                        System.out.println("Closing adventure.");
+                        stop = true;
+                        break;
+                    default:
+                        System.out.println("Invalid input, please try again");
             }
         } catch(Exception e){
             System.out.println("please enter a valid number from the list.");
