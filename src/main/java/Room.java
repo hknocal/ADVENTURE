@@ -13,12 +13,14 @@ public class Room {
     private Room west;
 
     private ArrayList<Item> items;
+    private ArrayList <Enemy> enemyList;
 
     Item item = new Item();
     public Room(String roomName, String roomDescription) {
         this.roomName = roomName;
         this.roomDescription = roomDescription;
         items = new ArrayList<Item>();
+        enemyList =  new ArrayList<Enemy>();
     }
 
     public String getRoomDescription() {
