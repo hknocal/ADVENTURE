@@ -108,6 +108,10 @@ public class Room {
     public String toString() {
         return "You are currently in: " + "\n" + "Room number: " + roomName + "\n" + "Room description: " + roomDescription + "\n" + "Current items in the room: " + items + "\n" + enemyList;
     }
+
+    public void removeEnemy(Enemy enemy) {
+        enemyList.remove(enemy);
+    }
 }
 
 

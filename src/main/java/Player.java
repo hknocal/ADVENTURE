@@ -92,7 +92,7 @@ public class Player {
         }
     }
 
-    public void attackHealthPlayer(int damage){
+    public void attackHealthPlayer(int damage) {
         playerHealthPoints -= damage;
     }
 
@@ -100,13 +100,23 @@ public class Player {
         Enemy enemy = currentRoom.getEnemy();
         if (enemy == null) {
             System.out.println("There are no enemies to fight.");
-        } else if (weaponEquipped == null){
+        } else if (weaponEquipped == null) {
             System.out.println("You don't have a weapon equipped");
         } else {
+            System.out.println("You encounter " + enemy.getEnemyName());
             enemy.attackHealthEnemy(this.weaponEquipped.getWeaponDamage());
             attackHealthPlayer(enemy.getEnemyWeaponDamage());
+            System.out.println("Fight is ongoing." + "Player HP: " + playerHealthPoints + " " + "Enemy HP: " + enemy.getEnemyHealth());
+            if (playerHealthPoints <= 0 && enemy.getEnemyHealth() <= 0) {
+                System.out.println("Both the enemy and you hit each other with a deadly blow at the same time, and you now lay on the floor dead. #PrayForHorande");
+                System.exit(0);
+            } else if (playerHealthPoints <= 0) {
+                System.out.println("You have been slain by: " + enemy.getEnemyName());
+                System.exit(0);
+            } else if (enemy.getEnemyHealth() <= 0) {
+                System.out.println("You have slain: " + enemy.getEnemyName());
+                currentRoom.removeEnemy(enemy);
+            }
         }
-
     }
-
 }

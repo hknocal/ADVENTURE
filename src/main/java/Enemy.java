@@ -28,6 +28,10 @@ public class Enemy {
         return enemyWeaponDamage;
     }
 
+    public String getEnemyName(){
+        return enemyName;
+    }
+
     public void attackHealthEnemy(int damage) {
         this.enemyHealth -= damage;
     }

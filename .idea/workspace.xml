@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b6cd64-6d24-4cd7-a81f-92eed87b6480" name="Changes" comment="Added more enemies to rooms">
+    <list default="true" id="44b6cd64-6d24-4cd7-a81f-92eed87b6480" name="Changes" comment="made attack method work. Need service message if enemy or player is dead">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Enemy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI.java" afterDir="false" />
     </list>
     <list id="8bdd8027-a2ea-49eb-871d-02792aae7659" name="Changes by Hakan Öcal" comment="" />
     <list id="bb725b31-28e1-47ce-9056-8ffab534ada3" name="Changes by Hjordt" comment="" />
@@ -78,7 +77,7 @@
       <workItem from="1664884936320" duration="3868000" />
       <workItem from="1664961068047" duration="1562000" />
       <workItem from="1665475708382" duration="5634000" />
-      <workItem from="1665493156830" duration="2396000" />
+      <workItem from="1665493156830" duration="3840000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1664455338383</created>
@@ -143,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665494071409</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="made attack method work. Need service message if enemy or player is dead">
+      <created>1665495749062</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1665495749062</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,6 +176,7 @@
     <MESSAGE value="minor ui changes" />
     <MESSAGE value="added items to rooms" />
     <MESSAGE value="Added more enemies to rooms" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added more enemies to rooms" />
+    <MESSAGE value="made attack method work. Need service message if enemy or player is dead" />
+    <option name="LAST_COMMIT_MESSAGE" value="made attack method work. Need service message if enemy or player is dead" />
   </component>
 </project>
