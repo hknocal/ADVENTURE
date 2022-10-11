@@ -122,7 +122,7 @@ public class UI {
                         System.out.println("Enter command: ");
                         break;
                     case "attack":
-                        //player attack
+                        player.attackEnemy();
                         break;
                     case "help":
                         System.out.println("""

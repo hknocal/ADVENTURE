@@ -92,12 +92,21 @@ public class Player {
         }
     }
 
-    public void attack(Enemy enemy) {
-        if (weaponEquipped == null);
-            else {
+    public void attackHealthPlayer(int damage){
+        playerHealthPoints -= damage;
+    }
+
+    public void attackEnemy() {
+        Enemy enemy = currentRoom.getEnemy();
+        if (enemy == null) {
+            System.out.println("There are no enemies to fight.");
+        } else if (weaponEquipped == null){
             System.out.println("You don't have a weapon equipped");
+        } else {
+            enemy.attackHealthEnemy(this.weaponEquipped.getWeaponDamage());
+            attackHealthPlayer(enemy.getEnemyWeaponDamage());
         }
-        enemy.addToHealth(this.weaponEquipped.getWeaponDamage());
+
     }
 
 }

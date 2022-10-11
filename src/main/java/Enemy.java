@@ -28,8 +28,8 @@ public class Enemy {
         return enemyWeaponDamage;
     }
 
-    public void addToHealth (int damage) {
-        this.enemyHealth += damage;
+    public void attackHealthEnemy(int damage) {
+        this.enemyHealth -= damage;
     }
 
 

@@ -74,6 +74,10 @@ public class Room {
         room.addItem(new Item(itemName));
     }
 
+    public Enemy getEnemy(){
+        return enemyList.get(0);
+    }
+
     public void addFoodToRoom(Room room, String itemName, int healthValue) {
         room.addItem(new Food(itemName, healthValue));
     }
