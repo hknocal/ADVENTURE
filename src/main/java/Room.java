@@ -14,9 +14,8 @@ public class Room {
 
     private ArrayList<Item> items;
 
-    Item item = new Item ();
-
-    public Room(String roomName, String roomDescription)  {
+    Item item = new Item();
+    public Room(String roomName, String roomDescription) {
         this.roomName = roomName;
         this.roomDescription = roomDescription;
         items = new ArrayList<Item>();
@@ -25,7 +24,8 @@ public class Room {
     public String getRoomDescription() {
         return roomDescription;
     }
-    public String getRoomName(){
+
+    public String getRoomName() {
         return roomName;
     }
 
@@ -54,21 +54,26 @@ public class Room {
         return west;
     }
 
-    public Room getNorth(){
+    public Room getNorth() {
         return north;
     }
 
-    public Room getSouth(){
+    public Room getSouth() {
         return south;
     }
 
-    public void addItem (Item item) {
+    public void addItem(Item item) {
         items.add(item);
+    }
+
+    public void addEnemy(Enemy enemy) {
+        enemyList.add(enemy);
     }
 
     public void addItemsToRoom(Room room, String itemName) {
         room.addItem(new Item(itemName));
     }
+
     public void addFoodToRoom(Room room, String itemName, int healthValue) {
         room.addItem(new Food(itemName, healthValue));
     }
@@ -82,21 +87,22 @@ public class Room {
         });
     }
 
+    public void addEnemy(Room room, String enemyName, int enemyHealth, String enemyWeapon, int enemyWeaponDamage) {
+        room.addEnemy(new Enemy(enemyName, enemyHealth, enemyWeapon, enemyWeaponDamage));
+    }
+
     public ArrayList<Item> getItems() {
         return items;
     }
 
-    public void showItem(){
+    public void showItem() {
         System.out.println(items.toString());
     }
 
 
     @Override
     public String toString() {
-        return "You are currently in: " + "\n" +
-                "Room number: " + roomName + "\n" +
-                "Room description: " + roomDescription + "\n" +
-                "Current items in the room: " + items + "\n";
+        return "You are currently in: " + "\n" + "Room number: " + roomName + "\n" + "Room description: " + roomDescription + "\n" + "Current items in the room: " + items + "\n" + enemyList;
     }
 }
 

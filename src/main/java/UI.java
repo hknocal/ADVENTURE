@@ -121,6 +121,9 @@ public class UI {
                         }
                         System.out.println("Enter command: ");
                         break;
+                    case "attack":
+                        //attack method here
+                        break;
                     case "help":
                         System.out.println("""
                                 -------------------------------------------

@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b6cd64-6d24-4cd7-a81f-92eed87b6480" name="Changes" comment="minor ui changes">
+    <list default="true" id="44b6cd64-6d24-4cd7-a81f-92eed87b6480" name="Changes" comment="added items to rooms">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Enemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Map.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Room.java" afterDir="false" />
     </list>
     <list id="8bdd8027-a2ea-49eb-871d-02792aae7659" name="Changes by Hakan Öcal" comment="" />
+    <list id="bb725b31-28e1-47ce-9056-8ffab534ada3" name="Changes by Hjordt" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Room.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +30,24 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/main/java/Room.java">
+      <ranges>
+        <range start1="15" end1="15" start2="15" end2="16" changelist="bb725b31-28e1-47ce-9056-8ffab534ada3" />
+        <range start1="16" end1="19" start2="17" end2="19" changelist="44b6cd64-6d24-4cd7-a81f-92eed87b6480" />
+        <range start1="22" end1="22" start2="22" end2="23" changelist="bb725b31-28e1-47ce-9056-8ffab534ada3" />
+        <range start1="27" end1="28" start2="28" end2="30" changelist="44b6cd64-6d24-4cd7-a81f-92eed87b6480" />
+        <range start1="56" end1="57" start2="58" end2="59" changelist="44b6cd64-6d24-4cd7-a81f-92eed87b6480" />
+        <range start1="60" end1="61" start2="62" end2="63" changelist="44b6cd64-6d24-4cd7-a81f-92eed87b6480" />
+        <range start1="64" end1="65" start2="66" end2="67" changelist="44b6cd64-6d24-4cd7-a81f-92eed87b6480" />
+        <range start1="68" end1="68" start2="70" end2="74" changelist="44b6cd64-6d24-4cd7-a81f-92eed87b6480" />
+        <range start1="71" end1="71" start2="77" end2="78" changelist="44b6cd64-6d24-4cd7-a81f-92eed87b6480" />
+        <range start1="84" end1="84" start2="91" end2="95" changelist="44b6cd64-6d24-4cd7-a81f-92eed87b6480" />
+        <range start1="88" end1="89" start2="99" end2="100" changelist="44b6cd64-6d24-4cd7-a81f-92eed87b6480" />
+        <range start1="95" end1="99" start2="106" end2="107" changelist="44b6cd64-6d24-4cd7-a81f-92eed87b6480" />
+      </ranges>
+    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -59,6 +85,7 @@
       <workItem from="1664731343285" duration="1641000" />
       <workItem from="1664884936320" duration="3868000" />
       <workItem from="1664961068047" duration="1562000" />
+      <workItem from="1665475708382" duration="5634000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1664455338383</created>
@@ -109,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665393233900</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added items to rooms">
+      <created>1665393843287</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1665393843287</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,6 +168,7 @@
     <MESSAGE value="created food class" />
     <MESSAGE value="Made weapon equip" />
     <MESSAGE value="minor ui changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="minor ui changes" />
+    <MESSAGE value="added items to rooms" />
+    <option name="LAST_COMMIT_MESSAGE" value="added items to rooms" />
   </component>
 </project>

@@ -74,5 +74,6 @@ public class Map {
         room2.addMeleeWeapon(room2, "scimitar", 150);
         room2.addMeleeWeapon(room3, "polearm", 200);
         room3.addRangedWeapon(room3, "longbow",400, 8);
+        room1.addEnemy(room1, "Enemy1", 500, "scimitar", 10);
     }
 }

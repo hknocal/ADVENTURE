@@ -25,48 +25,6 @@ public class Player {
         return currentRoom.toString();
     }
 
-    public boolean goWest() {
-        Room roomWest = getCurrentRoom().getWest();
-        if (roomWest == null) {
-            return false;
-        } else {
-            setCurrentRoom(roomWest);
-            return true;
-        }
-    }
-
-    public boolean goNorth() {
-        Room roomNorth = getCurrentRoom().getNorth();
-        if (roomNorth == null) {
-            return false;
-        } else {
-            setCurrentRoom(roomNorth);
-            return true;
-        }
-
-    }
-
-    public boolean goSouth() {
-        Room roomSouth = getCurrentRoom().getSouth();
-        if (roomSouth == null) {
-            return false;
-        } else {
-            setCurrentRoom((roomSouth));
-            return true;
-        }
-
-    }
-
-    public boolean goEast() {
-        Room roomEast = getCurrentRoom().getEast();
-        if (roomEast == null) {
-            return false;
-        } else {
-            setCurrentRoom(roomEast);
-            return true;
-        }
-    }
-
     public ArrayList<Item> getPlayerInventory() {
         return playerInventory;
     }
@@ -132,6 +90,14 @@ public class Player {
         } else {
             return false;
         }
+    }
+
+    public void attack(Enemy enemy) {
+        if (weaponEquipped == null);
+            else {
+            System.out.println("You don't have a weapon equipped");
+        }
+        enemy.addToHealth(this.weaponEquipped.getWeaponDamage());
     }
 
 }
