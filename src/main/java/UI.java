@@ -150,6 +150,7 @@ public class UI {
             }
         } catch(Exception e){
             System.out.println("please enter a valid number from the list.");
+            System.out.println(e.getMessage());
         }
     }
 }

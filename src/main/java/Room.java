@@ -112,6 +112,11 @@ public class Room {
     public void removeEnemy(Enemy enemy) {
         enemyList.remove(enemy);
     }
+
+    public boolean enemyCheck(){
+        return !enemyList.isEmpty();
+
+    }
 }
 
 

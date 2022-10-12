@@ -10,6 +10,13 @@ public class Weapon extends Item {
         return weaponDamage;
     }
 
+    public boolean canAttack(){
+        return true;
+    }
+
+
+
+
     @Override
     public String toString() {
         return super.toString();

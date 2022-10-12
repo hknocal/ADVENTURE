@@ -6,6 +6,7 @@ public class Player {
 
     Map map = new Map();
 
+
     private ArrayList<Item> playerInventory = new ArrayList<>();
 
     private Room currentRoom = map.getStarterRoom();
@@ -97,12 +98,14 @@ public class Player {
         playerHealthPoints -= damage;
     }
     public void attackEnemy() {
-        Enemy enemy = currentRoom.getEnemy();
-        if (enemy == null) {
+        if (currentRoom.enemyCheck() == false) {
             System.out.println("There are no enemies to fight.");
         } else if (weaponEquipped == null) {
             System.out.println("You don't have a weapon equipped");
+        } else if (weaponEquipped.canAttack() == false) {
+            System.out.println("Fleeing from enemy");
         } else {
+            Enemy enemy = currentRoom.getEnemy();
             System.out.println("You encounter " + enemy.getEnemyName());
             enemy.attackHealthEnemy(this.weaponEquipped.getWeaponDamage());
             attackHealthPlayer(enemy.getEnemyWeaponDamage());
