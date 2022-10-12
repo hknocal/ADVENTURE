@@ -3,6 +3,7 @@
 import java.util.ArrayList;
 
 public class Player {
+
     Map map = new Map();
 
     private ArrayList<Item> playerInventory = new ArrayList<>();
@@ -95,7 +96,6 @@ public class Player {
     public void attackHealthPlayer(int damage) {
         playerHealthPoints -= damage;
     }
-
     public void attackEnemy() {
         Enemy enemy = currentRoom.getEnemy();
         if (enemy == null) {
