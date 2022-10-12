@@ -1,5 +1,3 @@
-//TODO add food to rooms.
-
 public class Map {
     private Room currentRoom;
     private Room starterRoom;

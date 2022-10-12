@@ -4,20 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b6cd64-6d24-4cd7-a81f-92eed87b6480" name="Changes" comment="attack case added">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
-    </list>
-    <list id="8bdd8027-a2ea-49eb-871d-02792aae7659" name="Changes by Hakan Öcal" comment="" />
-    <list id="bb725b31-28e1-47ce-9056-8ffab534ada3" name="Changes by Hjordt" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Adventure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Adventure.java" afterDir="false" />
+    <list default="true" id="44b6cd64-6d24-4cd7-a81f-92eed87b6480" name="Changes" comment="attack working now with weapon uses">
       <change beforePath="$PROJECT_DIR$/src/main/java/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Map.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RangedWeapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RangedWeapon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Room.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Weapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Weapon.java" afterDir="false" />
     </list>
+    <list id="8bdd8027-a2ea-49eb-871d-02792aae7659" name="Changes by Hakan Öcal" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,18 +24,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/main/java/Player.java">
-      <ranges>
-        <range start1="5" end1="5" start2="5" end2="6" changelist="44b6cd64-6d24-4cd7-a81f-92eed87b6480" />
-        <range start1="6" end1="6" start2="7" end2="8" changelist="bb725b31-28e1-47ce-9056-8ffab534ada3" />
-        <range start1="97" end1="98" start2="99" end2="99" changelist="44b6cd64-6d24-4cd7-a81f-92eed87b6480" />
-        <range start1="99" end1="101" start2="100" end2="101" changelist="bb725b31-28e1-47ce-9056-8ffab534ada3" />
-        <range start1="104" end1="104" start2="104" end2="106" changelist="bb725b31-28e1-47ce-9056-8ffab534ada3" />
-        <range start1="105" end1="105" start2="107" end2="108" changelist="bb725b31-28e1-47ce-9056-8ffab534ada3" />
-      </ranges>
-    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -97,7 +77,7 @@
       <workItem from="1664961068047" duration="1562000" />
       <workItem from="1665475708382" duration="5634000" />
       <workItem from="1665493156830" duration="556000" />
-      <workItem from="1665558538486" duration="6079000" />
+      <workItem from="1665558538486" duration="6737000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1664455338383</created>
@@ -155,7 +135,21 @@
       <option name="project" value="LOCAL" />
       <updated>1665393843287</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="attack working now with weapon uses">
+      <created>1665564677724</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1665564677724</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Changes by Hjordt">
+      <created>1665564685199</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1665564685199</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,6 +175,8 @@
     <MESSAGE value="Made weapon equip" />
     <MESSAGE value="minor ui changes" />
     <MESSAGE value="added items to rooms" />
-    <option name="LAST_COMMIT_MESSAGE" value="added items to rooms" />
+    <MESSAGE value="attack working now with weapon uses" />
+    <MESSAGE value="Changes by Hjordt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes by Hjordt" />
   </component>
 </project>

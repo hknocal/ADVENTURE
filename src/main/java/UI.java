@@ -1,14 +1,4 @@
-import java.util.Map;
 import java.util.Scanner;
-import java.util.InputMismatchException;
-
-//TODO add try/cath - semi. Still need to make fail safe withing different switch cases
-//TODO check for fail states
-//TODO pretiffy UI - remove redundent code.
-//TODO IF TIME - add color to output
-//TODO Make sure it doesent repeat unnecessary code
-//TODO refactor take item & drop item so it gets called from adventure. (Look at eat() for inspiration.)
-
 public class UI {
 
     private Player player = new Player();
